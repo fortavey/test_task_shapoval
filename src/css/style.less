@@ -1,0 +1,121 @@
+@font-face {
+	font-family: 'Arial';
+	src: url('./fonts/Arial.eot');
+	src: local('☺'), url('./fonts/Arial.woff') format('woff'), url('./fonts/Arial.ttf') format('truetype'), url('./fonts/Arial.svg') format('svg');
+	font-weight: 400;
+	font-style: normal;
+}
+@font-face {
+	font-family: 'Arial';
+	src: url('./fonts/Arial-Bold.eot');
+	src: local('☺'), url('./fonts/Arial-Bold.woff') format('woff'), url('./fonts/Arial-Bold.ttf') format('truetype'), url('./fonts/Arial-Bold.svg') format('svg');
+	font-weight: 700;
+	font-style: normal;
+}
+
+body {
+    background-color: #E5E5E5;
+    padding-top: 10px;
+}
+.baner {
+    background-color: #fff;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    .btn {
+        a {
+            text-decoration: none;
+            color: inherit;
+            display: flex;
+            width: 100%;
+            height: 100%;
+            align-items: center;
+            justify-content: center;
+            color: #fff;
+            font-weight: 700;
+            font-size: 14px;
+            line-height: 20px;
+            @media screen and (min-width: 600px) {
+                font-size: 16px;
+            }
+        }
+    }
+    .regular-price {
+        text-decoration: line-through;
+    }
+    .sale-price {
+        font-weight: 700;
+    }
+    &_01 {
+        width: 264px;
+        font-family: 'Open Sans', sans-serif;
+        font-size: 14px;
+        line-height: 20px;
+        color: #212121;
+        padding: 16px 20px 20px;
+        @media screen and (min-width: 600px) {
+            padding: 16px 24px 20px;
+            font-size: 16px;
+            line-height: 24px;
+            max-width: 672px;
+            width: 100%;
+        }
+        &__text {
+            margin-bottom: 16px;
+        }
+        &__btn {
+            width: 145px;
+            height: 40px;
+            background-color: #FF7E4A;
+            box-shadow: 0px 6px 10px rgba(16, 17, 19, 0.1);
+            border-radius: 20px;
+            margin: 0 auto;
+            @media screen and (min-width: 600px) {
+                width: 156px;
+                height: 44px;
+                border-radius: 22px;
+                margin: 2px 0 0 0;
+            }
+        }
+        .sale-price {
+            font-weight: 700;
+            color: #FF7E4A;
+        }
+    }
+    &_02 {
+        width: 296px;
+        font-family: 'Arial', sans-serif;
+        font-size: 16px;
+        line-height: 24px;
+        color: #101010;
+        padding: 12px 10px;
+        text-align: center;
+        border: 1px solid #E5E8EC;
+        border-radius: 16px;
+        @media screen and (min-width: 600px) {
+            padding: 15px 23px 4px;
+            max-width: 640px;
+            width: 100%;
+            text-align: left;
+        }
+        &__btn {
+            width: 124px;
+            height: 36px;
+            background-color: #F7B100;
+            border-radius: 8px;
+            margin: 0 auto;
+            @media screen and (min-width: 600px) {
+                width: 159px;
+                height: 48px;
+                margin: 0;
+            }
+        }
+        &__text {
+            margin-bottom: 11px;
+        }
+        .sale-price {
+            color: #F7B100;
+        }
+    }
+}
